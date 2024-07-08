@@ -1,8 +1,8 @@
 <template>
     <div class="container mt-5">
         <h1 class="text-center text-white">Akumulasi Waktu Pengerjaan</h1>
-        <div class="dp-ruby">
-            <div class="bg-light p-2 br-5 w-50">
+        <div class="dp-ruby text-center">
+            <div class="bg-light p-2 br-5 w-60">
                 <table class="table table-hover">
                     <thead>
                         <tr>

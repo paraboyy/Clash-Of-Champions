@@ -1,24 +1,26 @@
 <template>
-    <div class="question position-relative">
+    <div class="question position-relative container">
         <div class="timer position-absolute top-0 end-0 p-2 mx-3 bg-warning rounded">
             <span>Waktu {{ formattedTime }}</span>
         </div>
         <h1 class="mt-3 text-center text-bold text-aqua">Round 1</h1>
         <!-- Tambahkan konten soal di sini -->
 
-        <div class="dp-flex mt-3">
-            <div class="w-50">
-                <img :src="imageUrl" alt="Example Image" class="ml-2 w-100 p-4" />
+        <div class="row mt-3">
+            <div class="col-md-6 col-12 mb-3">
+                <img :src="imageUrl" alt="Example Image" class="img-fluid p-4" />
             </div>
-            <div class="w-50 text-start text-white p-4">
+            <div class="col-md-6 col-12 text-start text-white p-4">
                 <h1 class="text-bold text-aqua">Tahap Extreme Addition</h1>
                 <p class="text-bold text-justify">Pada tahap ini peserta diuji untuk mengerjakan operasi penjumlahan
                     angka yang harus dijumlahkan.
                     Setiap peserta harus menjumlah sebanyak 625 angka pada tabel yang telah diberikan.
                 </p>
                 <input type="text" v-model="userAnswer" placeholder="Masukkan jawaban Anda" class="form-control mb-3" />
-                <button class="btn btn-success mx-2" @click="checkAnswer">Submit Jawaban</button>
-                <button class="btn btn-danger mx-2" @click="backHome">Back Home</button>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-success mx-2" @click="checkAnswer">Submit Jawaban</button>
+                    <button class="btn btn-danger mx-2" @click="backHome">Back Home</button>
+                </div>
             </div>
         </div>
     </div>
