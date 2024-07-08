@@ -1,0 +1,88 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* text-align: center; */
+  color: #2c3e50;
+  background-color: black;
+  height: 100%;
+}
+
+.welcome {
+  align-items: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.btn-2 {
+  border-radius: 10px;
+  padding: 1% 5%;
+  color: black;
+  font-weight: bold;
+  background-color: aqua;
+}
+
+.btn-2:hover {
+  background-color: whitesmoke;
+
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.h-700p {
+  height: 700px;
+}
+
+.countdown {
+  font-size: 48px;
+  font-weight: bold;
+  color: yellow;
+}
+
+.dp-flex {
+  display: flex;
+}
+
+.dp-ruby {
+  display: ruby-text;
+}
+
+.text-aqua {
+  color: aqua;
+}
+
+.dp-con {
+  display: contents;
+}
+
+.background {
+  background-image: url('https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/96/2024/07/04/Screenshot-2024-07-04-100038-2458217483.png');
+  background-size: cover; /* Cover the whole area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image repetition */
+}
+
+.timer {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.br-5 {
+  border-radius: 5px;
+}
