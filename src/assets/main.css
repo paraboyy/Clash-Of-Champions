@@ -53,6 +53,10 @@
   width: 10%;
 }
 
+.place-center {
+  place-items: center;
+}
+
 .countdown {
   font-size: 48px;
   font-weight: bold;
@@ -61,6 +65,10 @@
 
 .dp-flex {
   display: flex;
+}
+
+.dp-grid {
+  display: grid;
 }
 
 .dp-ruby {

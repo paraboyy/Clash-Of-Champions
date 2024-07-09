@@ -40,6 +40,7 @@ export default {
       const startTime = Date.now();
       localStorage.setItem('startTime', startTime);
       localStorage.removeItem('times');
+      // localStorage.setItem('startTime', 0);
       this.$router.push('/question');
     }
   }

@@ -127,7 +127,7 @@ export default {
                     text: `You guessed all cards correctly in ${duration} seconds!`,
                     icon: 'success',
                     showCancelButton: true,
-                    confirmButtonText: 'Round Selanjutnya',
+                    confirmButtonText: 'Babak Selanjutnya',
                     cancelButtonText: 'Home'
                 }).then((result) => {
                     if (result.isConfirmed) {
