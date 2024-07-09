@@ -21,7 +21,8 @@
                         </tr>
                     </tbody>
                 </table>
-            <button class="btn btn-danger mx-2" @click="backHome">Back Home</button>
+                <button class="btn btn-success mx-2 mb-2" @click="nextRound">Babak Selanjutnya</button>
+                <button class="btn btn-danger mx-2 mb-2" @click="backHome">Home</button>
             </div>
         </div>
     </div>
@@ -63,6 +64,9 @@ export default {
                 }
             });
         },
+        nextRound (){
+            window.location.href = '/Day-2';
+        }
     }
 };
 </script>

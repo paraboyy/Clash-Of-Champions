@@ -29,6 +29,11 @@ const router = createRouter({
       name: 'Hasil',
       component: () => import('../views/HasilView.vue')
     },
+    {
+      path: '/Day-2',
+      name: 'TebakKartu',
+      component: () => import('../views/Day2/TebakKartuView.vue')
+    },
   ]
 })
 

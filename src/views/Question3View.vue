@@ -21,8 +21,8 @@
                 </p>
                 <input type="text" v-model="userAnswer" placeholder="Masukkan jawaban Anda" class="form-control mb-3" />
                 <div class="d-flex justify-content-center">
-                    <button class="btn btn-success" @click="checkAnswer">Submit Jawaban</button>
-                    <button class="btn btn-danger mx-2" @click="backHome">Back Home</button>
+                    <button class="btn btn-success" @click="checkAnswer">Kirim Jawaban</button>
+                    <button class="btn btn-danger mx-2" @click="backHome">Home</button>
                 </div>  
                 </div>
             </div>
