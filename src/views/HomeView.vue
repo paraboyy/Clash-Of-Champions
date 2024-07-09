@@ -1,7 +1,7 @@
 <template>
   <div class="welcome p-5">
     <div class=" justify-content-center dp-flex">
-      <img :src="imageUrl" alt="Example Image" class="ml-2 w-60" />
+      <img :src="imageUrl" alt="Example Image" class="ml-2 col-md-6 col-12" />
     </div>
     <div class="text-center">
       <h3 class="text-white">Hello Survivor, Selamat Datang di Clash Of Champions by Ruangguru <br>
