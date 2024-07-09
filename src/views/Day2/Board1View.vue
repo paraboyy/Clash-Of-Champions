@@ -1,6 +1,6 @@
 <template>
     <div class="question position-relative container">
-        <div class="timer position-absolute top-0 end-0 p-2 mx-3 bg-warning rounded">
+        <div class="timer position-absolute top-0 end-0 mt-3 p-2 mx-3 bg-warning rounded">
             <span>Waktu {{ formattedTime }}</span>
         </div>
         <div class="dp-ruby text-center">
@@ -13,17 +13,6 @@
                 <img :src="imageUrl" alt="Example Image" class="ml-2 w-100 p-4" />
             </div>
             <div class="col-md-6 col-12 text-start text-white p-4">
-                <h1 class="text-bold text-aqua">Penjumlahan Angka Pola Heksagon</h1>
-                <p class="text-bold text-justify">Pada round kedua, peserta harus menghitung penjumlahan di mana
-                    terdapat empat angka yang terdapat dalam satu buah heksagon. Total ada 90 kolom heksagon.<br>
-
-                    <br>Namun hanya 89 yang jika angkanya dijumlahkan dapat menghasilkan (18). Ada satu heksagon yang
-                    jika dijumlahkan
-                    angkanya hanya menghasilkan (16).<br>
-
-                    <br>Pola pada setiap heksagon memiliki bilangan operasi masing-masing.
-                    Dalam round kedua, peserta harus menghitung hasil operasi bilangan yang ada di tiap heksagon.
-                </p>
                 <input type="text" v-model="userAnswer" placeholder="Masukkan jawaban Anda" class="form-control mb-3" />
                 <div class="d-flex justify-content-center">
                     <button class="btn btn-success" @click="checkAnswer">Kirim Jawaban</button>
@@ -35,14 +24,14 @@
 </template>
 
 <script>
-import round2 from '@/assets/round2.jpg';
+import board1 from '@/assets/board1.png.webp';
 
 export default {
     data() {
         return {
             elapsedTime: 0,
             timer: null,
-            imageUrl: round2,
+            imageUrl: board1,
             userAnswer: ''
         };
     },
@@ -54,6 +43,8 @@ export default {
         }
     },
     created() {
+        localStorage.removeItem('times');
+        localStorage.removeItem('startTime');
         this.startTimer();
     },
     beforeDestroy() {

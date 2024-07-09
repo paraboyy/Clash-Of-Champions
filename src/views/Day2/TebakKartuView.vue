@@ -96,7 +96,7 @@ export default {
             this.guesses = this.shuffledCards.map(() => ({ value: '', suit: '' }));
         },
         startTimer() {
-            this.timeRemaining = 2;
+            this.timeRemaining = 60;
             this.timerInterval = setInterval(() => {
                 if (this.timeRemaining > 0) {
                     this.timeRemaining--;

@@ -34,6 +34,11 @@ const router = createRouter({
       name: 'TebakKartu',
       component: () => import('../views/Day2/TebakKartuView.vue')
     },
+    {
+      path: '/board-1',
+      name: 'Board-1',
+      component: () => import('../views/Day2/ComingsoonView.vue')
+    },
   ]
 })
 
