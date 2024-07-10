@@ -98,6 +98,7 @@ export default {
     created() {
         // localStorage.setItem('startTime', 0);
         localStorage.removeItem('times');
+        localStorage.removeItem('correct');
         this.startTimer();
     },
     beforeDestroy() {
@@ -118,7 +119,9 @@ export default {
         checkAnswer() {
             let correct = 0;
             let incorrect = 0;
-            const answers = { A: '8', B: '9', C: '2', D: '0', E: '4', F: '13', G: '3', H: '11', I: '10' };
+            const answers = { A: '8', B: '9', C: '2', 
+                              D: '0', E: '4', F: '13', 
+                              G: '3', H: '11', I: '10' };
 
             for (const key in answers) {
                 if (this[key] === answers[key]) {
@@ -138,6 +141,10 @@ export default {
                 confirmButtonText: 'OK'
             }).then(() => {
                 if (correct === Object.keys(answers).length) {
+                    const storedTimes = localStorage.getItem('correct');
+                    const benar = storedTimes ? JSON.parse(storedTimes) : [];
+                    benar.push(correct);
+                    localStorage.setItem('correct', JSON.stringify(benar));
                     this.finishQuiz();
                 }
             });

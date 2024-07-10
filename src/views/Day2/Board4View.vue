@@ -4,7 +4,7 @@
             <span>Waktu {{ formattedTime }}</span>
         </div>
         <div class="dp-ruby text-center">
-            <h1 class="mt-3 text-bold text-aqua">Board 2</h1>
+            <h1 class="mt-3 text-bold text-aqua">Board 4</h1>
         </div>
         <!-- Tambahkan konten soal di sini -->
 
@@ -12,7 +12,7 @@
             <div class="col-md-6 col-12 mb-3">
                 <img :src="imageUrl" alt="Example Image" class="ml-2 w-100 p-4" />
             </div>
-            <div class="col-md-6 col-12 text-start text-white p-4">
+            <div class="col-md-6 col-12 text-start text-white p-2">
                 <div class="dp-flex">
                     <div class="mx-1 dp-flex w-70">
                         <p class="mx-1 mt-2">A=</p>
@@ -30,12 +30,12 @@
                         <p class="mx-1 mt-2">D=</p>
                         <input type="text" v-model="D" placeholder="Nilai D" class="form-control mb-3" />
                     </div>
-                </div>
-                <div class="dp-flex">
                     <div class="mx-1 dp-flex w-70">
                         <p class="mx-1 mt-2">E=</p>
                         <input type="text" v-model="E" placeholder="Nilai E" class="form-control mb-3" />
                     </div>
+                </div>
+                <div class="dp-flex">
                     <div class="mx-1 dp-flex w-70">
                         <p class="mx-1 mt-2">F=</p>
                         <input type="text" v-model="F" placeholder="Nilai F" class="form-control mb-3" />
@@ -48,8 +48,6 @@
                         <p class="mx-1 mt-2">H=</p>
                         <input type="text" v-model="H" placeholder="Nilai H" class="form-control mb-3" />
                     </div>
-                </div>
-                <div class="dp-flex">
                     <div class="mx-1 dp-flex w-70">
                         <p class="mx-1 mt-2">I=</p>
                         <input type="text" v-model="I" placeholder="Nilai I" class="form-control mb-3" />
@@ -58,6 +56,8 @@
                         <p class="mx-1 mt-2">J=</p>
                         <input type="text" v-model="J" placeholder="Nilai J" class="form-control mb-3" />
                     </div>
+                </div>
+                <div class="dp-flex">
                     <div class="mx-1 dp-flex w-70">
                         <p class="mx-1 mt-2">K=</p>
                         <input type="text" v-model="K" placeholder="Nilai K" class="form-control mb-3" />
@@ -66,8 +66,6 @@
                         <p class="mx-1 mt-2">L=</p>
                         <input type="text" v-model="L" placeholder="Nilai L" class="form-control mb-3" />
                     </div>
-                </div>
-                <div class="dp-flex">
                     <div class="mx-1 dp-flex w-70">
                         <p class="mx-1 mt-2">M=</p>
                         <input type="text" v-model="M" placeholder="Nilai M" class="form-control mb-3" />
@@ -80,9 +78,49 @@
                         <p class="mx-1 mt-2">O=</p>
                         <input type="text" v-model="O" placeholder="Nilai O" class="form-control mb-3" />
                     </div>
+                </div>
+                <div class="dp-flex">
                     <div class="mx-1 dp-flex w-70">
                         <p class="mx-1 mt-2">P=</p>
                         <input type="text" v-model="P" placeholder="Nilai P" class="form-control mb-3" />
+                    </div>
+                    <div class="mx-1 dp-flex w-70">
+                        <p class="mx-1 mt-2">Q=</p>
+                        <input type="text" v-model="Q" placeholder="Nilai Q" class="form-control mb-3" />
+                    </div>
+                    <div class="mx-1 dp-flex w-70">
+                        <p class="mx-1 mt-2">R=</p>
+                        <input type="text" v-model="R" placeholder="Nilai R" class="form-control mb-3" />
+                    </div>
+                    <div class="mx-1 dp-flex w-70">
+                        <p class="mx-1 mt-2">S=</p>
+                        <input type="text" v-model="S" placeholder="Nilai S" class="form-control mb-3" />
+                    </div>
+                    <div class="mx-1 dp-flex w-70">
+                        <p class="mx-1 mt-2">T=</p>
+                        <input type="text" v-model="T" placeholder="Nilai T" class="form-control mb-3" />
+                    </div>
+                </div>
+                <div class="dp-flex">
+                    <div class="mx-1 dp-flex w-70">
+                        <p class="mx-1 mt-2">U=</p>
+                        <input type="text" v-model="U" placeholder="Nilai U" class="form-control mb-3" />
+                    </div>
+                    <div class="mx-1 dp-flex w-70">
+                        <p class="mx-1 mt-2">V=</p>
+                        <input type="text" v-model="V" placeholder="Nilai V" class="form-control mb-3" />
+                    </div>
+                    <div class="mx-1 dp-flex w-70">
+                        <p class="mx-1 mt-2">W=</p>
+                        <input type="text" v-model="W" placeholder="Nilai W" class="form-control mb-3" />
+                    </div>
+                    <div class="mx-1 dp-flex w-70">
+                        <p class="mx-1 mt-2">X=</p>
+                        <input type="text" v-model="X" placeholder="Nilai X" class="form-control mb-3" />
+                    </div>
+                    <div class="mx-1 dp-flex w-70">
+                        <p class="mx-1 mt-2">Y=</p>
+                        <input type="text" v-model="Y" placeholder="Nilai Y" class="form-control mb-3" />
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
@@ -95,7 +133,7 @@
 </template>
 
 <script>
-import board2 from '@/assets/board2.png.webp';
+import board4 from '@/assets/board4.jpg';
 // import Swal from 'sweetalert2';
 
 export default {
@@ -103,7 +141,7 @@ export default {
         return {
             elapsedTime: 0,
             timer: null,
-            imageUrl: board2,
+            imageUrl: board4,
             userAnswer: '',
             A: '',
             B: '',
@@ -121,6 +159,15 @@ export default {
             N: '',
             O: '',
             P: '',
+            Q: '',
+            R: '',
+            S: '',
+            T: '',
+            U: '',
+            V: '',
+            W: '',
+            X: '',
+            Y: '',
             correctAnswers: 0,
             incorrectAnswers: 0,
         };
@@ -152,10 +199,13 @@ export default {
         checkAnswer() {
             let correct = 0;
             let incorrect = 0;
-            const answers = { A: '14', B: '9', C: '8', D: '8', 
-                              E: '11', F: '3', G: '-1', H: '9', 
-                              I: '3', J: '9', K: '5', L: '-1', 
-                                M: '2', N: '4', O: '22', P: '6' };
+            const answers = {
+                A: '64', B: '23', C: '9', D: '4', E: '9',
+                F: '6', G: '4', H: '5', I: '36', J: '36',
+                K: '1', L: '-5', M: '100', N: '8', O: '-4',
+                U: '-8', V: '6', W: '-8', X: '7', Y: '8',
+                P: '3', Q: '1', R: '10', S: '3', T: '2'
+            };
 
             for (const key in answers) {
                 if (this[key] === answers[key]) {
@@ -175,10 +225,6 @@ export default {
                 confirmButtonText: 'OK'
             }).then(() => {
                 if (correct === Object.keys(answers).length) {
-                    const storedTimes = localStorage.getItem('correct');
-                    const benar = storedTimes ? JSON.parse(storedTimes) : [];
-                    benar.push(correct);
-                    localStorage.setItem('correct', JSON.stringify(benar));
                     this.finishQuiz();
                 }
             });
@@ -215,7 +261,7 @@ export default {
                 text: `Waktu pengerjaan: ${duration} detik`,
                 didClose: () => {
                     localStorage.removeItem('startTime'); // Reset start time
-                    window.location.href = '/board-3';
+                    window.location.href = '/finis-2';
                 }
             });
         }

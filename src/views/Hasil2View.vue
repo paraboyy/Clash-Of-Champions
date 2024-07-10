@@ -1,22 +1,28 @@
 <template>
     <div class="container mt-5">
         <h1 class="text-center text-white">Akumulasi Waktu Pengerjaan</h1>
-        <div class="dp-ruby text-center">
-            <div class="bg-light p-2 br-5 w-60">
+        <div class="dp-ruby text-center m-1">
+            <div class="bg-light p-2 br-5 w-100">
                 <table class="table table-hover">
                     <thead>
                         <tr>
                             <th>Round</th>
+                            <th>Poin</th>
                             <th>Waktu Pengerjaan (detik)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr v-for="(time, index) in times" :key="index">
                             <td>Round {{ index + 1 }}</td>
+                            <td>{{ correct[index] }}</td>
                             <td>{{ time }}</td>
                         </tr>
                         <tr>
-                            <td><strong>Total Waktu</strong></td>
+                            <td colspan="2"><strong>Total Poin</strong></td>
+                            <td><strong>{{ totalJawaban }}</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><strong>Total Waktu</strong></td>
                             <td><strong>{{ totalTime }}</strong></td>
                         </tr>
                     </tbody>
@@ -32,12 +38,16 @@
 export default {
     data() {
         return {
-            times: []
+            times: [],
+            correct: []
         };
     },
     computed: {
         totalTime() {
             return this.times.reduce((acc, time) => acc + time, 0);
+        },
+        totalJawaban() {
+            return this.correct.reduce((acc, benar) => acc + benar, 0);
         }
     },
     created() {
@@ -46,8 +56,12 @@ export default {
     methods: {
         loadTimes() {
             const storedTimes = localStorage.getItem('times');
+            const jawaban = localStorage.getItem('correct');
             if (storedTimes) {
                 this.times = JSON.parse(storedTimes);
+            }
+            if (jawaban) {
+                this.correct = JSON.parse(jawaban);
             }
         },
         backHome() {

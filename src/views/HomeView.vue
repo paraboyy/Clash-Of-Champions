@@ -1,5 +1,21 @@
 <template>
-  <div class="welcome p-5">
+  <div class="welcome">
+    <nav>
+      <div class="text-center mt-2">
+        <ul class="dp-flex place-center-2">
+          <li class="nav-item">
+            <a class="nav-link" href="/question">Round 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Day-2">Round 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/board-1">Round 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class=" justify-content-center dp-flex">
       <img :src="imageUrl" alt="Example Image" class="ml-2 col-md-6 col-12" />
     </div>

@@ -49,6 +49,16 @@ const router = createRouter({
       name: 'Board-2',
       component: () => import('../views/Day2/Board2View.vue')
     },
+    {
+      path: '/board-3',
+      name: 'Board-3',
+      component: () => import('../views/Day2/Board3View.vue')
+    },
+    {
+      path: '/board-4',
+      name: 'Board-4',
+      component: () => import('../views/Day2/Board4View.vue')
+    },
   ]
 })
 
